@@ -2,7 +2,7 @@ body {
   background: #193549;
   color: white;
   font-family: 'helvetica neue', sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 100;
   text-align: center;
 }
@@ -13,4 +13,21 @@ body {
 
 input {
   width: 100px;
+}
+
+/* playing with vars */
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  background-color: var(--base);
+  filter: blur(var(--blur));
+  padding: var(--spacing);
+}
+
+.hl {
+  color: var(--base);
 }
